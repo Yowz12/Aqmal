@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+</head>
+<body>
+
+    <header>
+        <img src="myar.jpg" alt="Logo">
+        <h1 class="font-effect-emboss">My ARCHIVE</h1>
+        <div id="clock"></div>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="gallery.html">Album</a>
+        <a href="hobi.html">Hoby</a>
+    </nav>
+    <h1>AQMAL HAQIM BIN YAHAYA</h1>
+    <div class="main">
+        <img src="me1.jpg" alt="Profile Picture">
+        <div class="text-box">
+            <h2>Welcome to My Archive</h2>
+            <p>
+                Hello! I'm Aqmal Haqim Bin Yahaya, a motivated individual with a diverse range of interests and experiences. 
+                This webpage is a summary of my training, achievements, and skills that I have developed over the years. 
+                This page provides an overview of my life and accomplishments, including my employment experiences, college projects, and high school triumphs. 
+                Whether your goal is to review my achievements, look over my academic records, or learn more about my interests and goals, I'm happy to have you here. 
+                I want to meet and support others who share my interests and aspirations along the way. 
+                Please browse my qualifications, galleries, and other achievements to date.
+            </p>
+        </div>
+    </div>
+    <div class="icon">
+        <a href="https://www.instagram.com/qmalqiem/profilecard/?igsh=dnhoeGp0bWF6dDF5" target="_blank"><img src="ig.jpg"> 
+        <a href="mailto:haqimyahaya12@gmail.com" target="_blank"><img src="mail.jpg">
+        <a href="https://www.facebook.com/profile.php?id=100089208774332&mibextid=ZbWKwL" target="_blank"><img src="fb.jpg">
+        </a>
+    </div>
+    <footer>
+        <div class="scroll-text">
+            <p>&copy; Malqeem. Welcome to my personal website! &bull; Special made for My Archive &bull; Please Enjoy!</p>
+        </div>
+        <video width="20" autoplay loop>
+            <source src="lofi2.mp4" type="video/mp4">
+        </video>
+    </footer>
+    <script>
+        function updateClock() {
+            const clock = document.getElementById("clock");
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>

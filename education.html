@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            font-family: 'Papyrus', 'Arial Narrow', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-size: cover; 
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 110px; 
+            margin-right: 550px; 
+        }
+        nav {
+            display: flex;
+            justify-content: right;
+            background-image: url('wbg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 10px 0;
+        }
+        nav a {
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+            border-radius: 5px;
+        }
+        .education-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-image: url('book2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.516);
+            border-radius: 10px;
+        }
+        .education-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .education-item {
+            margin-bottom: 20px;
+        }
+        .education-box {
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            padding: 15px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            border: 1px solid #ddd; 
+            color: white; 
+            position: relative;
+            overflow: hidden;
+        }
+        .education-box::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .education-box * {
+            position: relative;
+            z-index: 2;
+        }
+        .school-background {
+            background-image: url('sksl.jpg'); 
+            color: rgb(255, 255, 255);
+        }
+        .highschool-background {
+            background-image: url('smkdb.jpg'); 
+            color: rgb(255, 255, 255);
+        }
+        .university-background {
+            background-image: url('uitm.jpg'); 
+            color: rgb(255, 255, 255);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #clock {
+            position: absolute;
+            top: 10%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="myar.jpg" alt="Logo">
+        <h1>Education</h1>
+        <div id="clock"></div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="gallery.html">Album</a>
+        <a href="hobi.html">Hoby</a>
+    </nav>
+    <div class="education-section">
+        <h2>My Educational Journey</h2>
+                
+        <div class="education-item">
+            <div class="education-box school-background">
+                <h3><a href="https://www.google.com.my/maps/place/SK+Sri+Lanang/@2.3167953,102.4233434,17z/data=!3m1!4b1!4m6!3m5!1s0x31d1e74feec701b5:0xa756bc7bfe1c9160!8m2!3d2.3167953!4d102.4259183!16s%2Fg%2F1221mv18?entry=ttu&g_ep=EgoyMDI0MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: none;">SK SRI LANANG</a></h3>
+                <h4>Primary School</h4>
+                <h4>Graduated: 2016</h4>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-box highschool-background">
+                <h3><a href="https://www.google.com.my/maps/place/SMK+Datuk+Bendahara/@2.3076748,102.4223891,17z/data=!3m1!4b1!4m6!3m5!1s0x31d1e767e3c83727:0x168497330f4687c0!8m2!3d2.3076748!4d102.424964!16s%2Fg%2F121y0f96?entry=ttu&g_ep=EgoyMDI0MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: none;">SMK DATUK BENDAHARA</a></h3>
+                <h4>High School</h4>
+                <h4>Graduated: 2021</h4>
+                <h4>At SMK DATUK BENDAHARA, I excelled in subjects like Agricultural science and History. I was also active in co-curricular activities such as robotics, art, and archery.</h4>
+            </div>
+        </div>
+        
+        <div class="education-item">
+            <div class="education-box university-background">
+                <h3><a href="https://www.google.com.my/maps/place/UiTM+Cawangan+Johor,+Kampus+Segamat/@2.4879644,102.7267277,17z/data=!3m1!4b1!4m6!3m5!1s0x31ce2c6ce929a871:0xc0dfa5fe6922a589!8m2!3d2.4879644!4d102.7293026!16s%2Fg%2F187cd8bw?entry=ttu&g_ep=EgoyMDI0MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: none;">Universiti Teknologi MARA</a></h3>
+                <h4>Diploma in Information Management | Current</h4>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Malqeem.</p>
+    </footer>
+    <script>
+        function updateClock() {
+            const clock = document.getElementById("clock");
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>
